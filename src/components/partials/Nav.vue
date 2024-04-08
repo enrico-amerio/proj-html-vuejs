@@ -12,8 +12,8 @@ import {store} from '../../data/store'
 
 
 <template>
-  <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg ">
+  <div class="container">
     <div class="col-6">
       <a class="navbar-brand" href="#">
         <img src="../../assets/img/logo-img-01.png" alt="Everlead-logo" class="logo">
@@ -60,6 +60,7 @@ import {store} from '../../data/store'
 
 
 <style lang="scss" scoped>
+@use '../../assets/scss/partials/variables' as * ;
 nav{
   position:fixed;
   z-index: 999;
@@ -71,7 +72,12 @@ nav{
       font-size:10px;
       font-weight: 700;
       &:hover{
-        color: orange;
+        color: $main-orange;
+        &::before{
+          content:'\f178';
+          font-family: 'Font Awesome 5 Free';
+          margin: 8px;
+        }
       }
     }
 }
