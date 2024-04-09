@@ -1,6 +1,7 @@
 <script>
 import {store} from '../data/store';
 import Specialities from './Specialities.vue';
+import Staff from './Staff.vue';
   export default {
     data(){
       return{
@@ -8,7 +9,8 @@ import Specialities from './Specialities.vue';
       }
     },
     components:{
-      Specialities
+      Specialities,
+      Staff
     }
   }
 </script>
@@ -16,6 +18,7 @@ import Specialities from './Specialities.vue';
 
 <template>
   <Specialities/>
+  <Staff/>
 </template>
 
 

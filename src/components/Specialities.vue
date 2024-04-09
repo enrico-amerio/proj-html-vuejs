@@ -55,6 +55,7 @@ export default {
       border-bottom: 2px solid $main-orange;
       width: 50px;
       margin: 0 auto;
+      margin-bottom: 30px;      
     }
 
 }

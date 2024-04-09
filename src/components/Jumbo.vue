@@ -58,7 +58,7 @@ import slideJumbo from '../assets/db.json'
       </div>
     </div>
     <div class="nav-arrows container d-flex justify-content-between">
-      <a @click="goPrev"><i class="fa-solid fa-arrow-left"></i></a>
+      <a @click="goPrev"><i class="fa-solid fa-arrow-left-long"></i></a>
       <a @click="goNext"><i class="fa-solid fa-arrow-right-long"></i></a>
     </div>
   </div>
