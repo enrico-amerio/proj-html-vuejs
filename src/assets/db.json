@@ -1,0 +1,49 @@
+{
+  "slideJumbo": [
+    {
+      "id": 1,
+      "img": "rev-slider-main-home-img-02.png",
+      "title": "OurMission",
+      "description": " Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet. ",
+      "btn1": "LEARN MORE"
+    },
+    {
+      "id": 2,
+      "img": "rev-slider-main-home-img-03.jpg",
+      "title": "OurTeam",
+      "description": " Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet. ",
+      "btn1": "READ MORE",
+      "btn2": "PURCHASE"
+    }
+  ],
+  "specialities":[
+    {
+      "id": 1 ,
+      "title": "Knowing",
+      "description":" Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
+      "img": "logo-side-area-img-01-1.png"
+
+    },
+    {
+      "id": 2 ,
+      "title": "Selling",
+      "description":" Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
+      "img": "logo-side-area-img-01-1.png"
+
+    },
+    {
+      "id": 3 ,
+      "title": "Learning",
+      "description":" Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
+      "img": "logo-side-area-img-01-1.png"
+
+    },
+    {
+      "id": 4 ,
+      "title": "Contact",
+      "description":" Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
+      "img": "logo-side-area-img-01-1.png"
+
+    }
+  ]
+}

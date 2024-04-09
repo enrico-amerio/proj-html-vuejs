@@ -1,5 +1,5 @@
 <script>
-import {store} from '../../data/store'
+import {store} from '../data/store'
   export default {  
     data(){
       return{
@@ -13,15 +13,15 @@ import {store} from '../../data/store'
 
 <template>
   <nav class="navbar navbar-expand-lg ">
-  <div class="container">
-    <div class="col-6">
+  <div class="container ">
+    <div class="col-lg-6">
       <a class="navbar-brand" href="#">
-        <img src="../../assets/img/logo-img-01.png" alt="Everlead-logo" class="logo">
+        <img src="../assets/img/logo-img-01.png" alt="Everlead-logo" class="logo">
       </a>
     </div>
-    <div class="col-6">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <div class="col-lg-6 ">
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0  ">
@@ -60,7 +60,7 @@ import {store} from '../../data/store'
 
 
 <style lang="scss" scoped>
-@use '../../assets/scss/partials/variables' as * ;
+@use '../assets/scss/partials/variables' as * ;
 nav{
   position:fixed;
   z-index: 999;
@@ -80,5 +80,6 @@ nav{
         }
       }
     }
-}
+  }
+
 </style>
