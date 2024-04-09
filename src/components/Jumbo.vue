@@ -79,7 +79,6 @@ import slideJumbo from '../assets/db.json'
   .slide{
     position: relative;
     width: 100%;
-    
     z-index: -1;
     
     img{
