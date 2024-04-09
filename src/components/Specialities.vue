@@ -20,25 +20,42 @@ export default {
         return new URL(`../assets/img/${img}`, import.meta.url).href
       },
   },
-  mounted(){
-    console.log(data.specialities);
-  }
+ 
 }
 </script>
 
  <template>
-  <div class="container">
+  <div class="container text-center specialities">
     <h2 class="title">Our specialities</h2>
     <p>Lorem ipsum dolor sit amet.</p>
     <div class="line"></div>
-    <SpecialCards v-for="card in data.specialities" :key="card.id"
-    :img="getPathImage(card.img)"
-    :title="card.title"
-    :description="card.description"
-    /> 
+    <div class="d-flex flex-wrap justify-content-center">
+      <SpecialCards v-for="card in data.specialities" :key="card.id"
+      :img="getPathImage(card.img)"
+      :title="card.title"
+      :description="card.description"
+      /> 
+
+    </div>
   </div>
 </template> 
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/variables' as * ;
+.specialities{
+  background: white;
+  padding: 100px 0 80px 0;
+  z-index: 999;
+  margin-top:-40px;
+    h2::after{
+      content: '.';
+      color: $main-orange;
+    }
+    .line{
+      border-bottom: 2px solid $main-orange;
+      width: 50px;
+      margin: 0 auto;
+    }
 
+}
 </style>

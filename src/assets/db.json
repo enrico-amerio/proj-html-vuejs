@@ -20,28 +20,28 @@
     {
       "id": 1 ,
       "title": "Knowing",
-      "description":" Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
+      "description":" Lorem ipsum dolor sit amet. Lorem ipsum.",
       "img": "logo-side-area-img-01-1.png"
 
     },
     {
       "id": 2 ,
       "title": "Selling",
-      "description":" Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
+      "description":" Lorem ipsum dolor sit amet. Lorem ipsum.",
       "img": "logo-side-area-img-01-1.png"
 
     },
     {
       "id": 3 ,
       "title": "Learning",
-      "description":" Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
+      "description":" Lorem ipsum dolor sit amet. Lorem ipsum.",
       "img": "logo-side-area-img-01-1.png"
 
     },
     {
       "id": 4 ,
       "title": "Contact",
-      "description":" Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
+      "description":" Lorem ipsum dolor sit amet. Lorem ipsum.",
       "img": "logo-side-area-img-01-1.png"
 
     }

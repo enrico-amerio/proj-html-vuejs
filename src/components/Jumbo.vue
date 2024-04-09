@@ -35,7 +35,7 @@ import slideJumbo from '../assets/db.json'
 
 
 <template>
-  <div >
+  <div class="wrapper" >
     <div v-for="slide in slideJumbo.slideJumbo" :key="slide.id" class="slide">
       <div v-if="this.store.jumboCounter == slide.id" >
         <img :src="getPathImage(slide.img)" alt="jumboImg">
@@ -54,12 +54,12 @@ import slideJumbo from '../assets/db.json'
               </a>
             </div>
           </div>
-          <div class="nav-arrows container d-flex justify-content-between">
-            <a @click="goPrev"><i class="fa-solid fa-arrow-left"></i></a>
-            <a @click="goNext"><i class="fa-solid fa-arrow-right-long"></i></a>
-          </div>
         </div>
       </div>
+    </div>
+    <div class="nav-arrows container d-flex justify-content-between">
+      <a @click="goPrev"><i class="fa-solid fa-arrow-left"></i></a>
+      <a @click="goNext"><i class="fa-solid fa-arrow-right-long"></i></a>
     </div>
   </div>
 
@@ -71,37 +71,46 @@ import slideJumbo from '../assets/db.json'
 <style lang="scss" scoped>
 @use '../assets/scss/main';
 @use '../assets/scss/partials/variables' as * ;
-
-.slide{
+.wrapper{
   position: relative;
-  max-width: 2000px;
-  margin: 0 auto;
-  
+   display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  .slide{
+    position: relative;
+    width: 100%;
+    
+    z-index: -1;
+    
     img{
       width: 100%;
       height: 90vh;
       max-height: 1000px;
-
-      object-fit: cover;
-    }
-    .infoJumbo{
-      width: 30%;
-      position: absolute;
-      left: 18%;
-      top: 40%;
-      
-      h1::after{
-        content: '.';
-        color: $main-orange;
+      // z-index: -2;
+          object-fit: cover;
+        }
+        .infoJumbo{
+          width: 30%;
+          position: absolute;
+          left: 18%;
+          top: 40%;
+          
+          h1::after{
+            content: '.';
+            color: $main-orange;
+          }
+        }
       }
-    }
-    .nav-arrows{
-      position: absolute;
-      top:50%;
-      margin: 0 auto;
+      .nav-arrows{
+        position: absolute;
+        top:50%;
+        margin: 0 auto;
+        z-index: 2;
         a{
           cursor: pointer;
         }
-    }
+      }
+
 }
+      
 </style>

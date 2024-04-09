@@ -11,24 +11,35 @@ import specialities from '../../assets/db.json'
     props:{
       img: String,
       title: String,
-      status : String,
+      description : String,
     }
   };
 </script>
 
 <template>
-  <div class="card m-3 text-center " style="width: 18rem;">
-    <img :src="img" class="card-img-top" :alt="title" tabindex="0">
+  <div class="card m-3 text-center d-flex flex-column align-items-center " style="width: 12em;">
+    <img :src="img" class="card-img-top" :alt="title">
     <div class="card-body">
-      <h5 class="card-title">{{ title }}</h5>
+      <h6 class="card-title">{{ title }}</h6>
       <p class="card-title">{{ description }}</p>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+@use '../../assets/scss/main';
+@use '../../assets/scss/partials/variables' as * ;
 .card{
+
   text-align: center;
   border: 0;
+    img{
+      filter: invert(45%) sepia(100%) saturate(4377%) hue-rotate(353deg) brightness(100%) contrast(102%);
+      width: 40%;
+    }
+    p{
+      font-size: 0.8rem;
+    }
+    
 }
 </style>
