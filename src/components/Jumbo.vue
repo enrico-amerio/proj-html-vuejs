@@ -75,7 +75,7 @@ import slideJumbo from '../assets/db.json'
   position: relative;
    display: flex;
   flex-direction: column;
-  align-items: center; /* Center horizontally */
+  align-items: center; 
   .slide{
     position: relative;
     width: 100%;

@@ -64,7 +64,7 @@ export default {
 @use '../assets/scss/partials/variables' as * ;
 @use '../assets/scss/main';
 .main-wrapper{
-  height: 409px;
+  height: fit-content;
   position: relative;
   padding: 100px 0;
   .img-wrapper{
@@ -78,7 +78,7 @@ export default {
     width: 35%;
     min-width: 400px;
     height: fit-content;
-    padding: 30px 55px;
+    padding: 20px 55px;
     
     @media only screen and (min-width: 992px) {
       position: relative;

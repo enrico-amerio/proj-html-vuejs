@@ -17,7 +17,7 @@ export default {
   },
   methods:{
     getPathImage(img){
-        return new URL(`../assets/img/${img}`, import.meta.url).href
+        return new URL(`../assets/svg/${img}`, import.meta.url).href
       },
   },
  
