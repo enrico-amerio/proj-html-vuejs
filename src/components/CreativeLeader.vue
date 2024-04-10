@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div class="wrapper p-5">
-    <div class="container  mt-5  ">
+    <div class="container  mt-5">
       <div class="col-xl-6 mb-5">
         <h3> Creative Leader</h3>
         <div class="line"></div>

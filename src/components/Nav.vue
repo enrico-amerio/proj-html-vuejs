@@ -6,13 +6,30 @@ import {store} from '../data/store'
         store
       }
     },
+    mounted() {
+    window.addEventListener('scroll', this.scrollFunction);
+  },
+  methods: {
+    scrollFunction() {
+      let mybutton = document.getElementById("nav");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.backgroundColor = "rgba(255,255,255,0.8)";
+      } else {
+        mybutton.style.backgroundColor = "transparent";
+      }
+    },
+    topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  }
     
   }
 </script>
 
 
 <template>
-  <nav class="navbar navbar-expand-lg ">
+  <nav class="navbar navbar-expand-lg " id="nav">
   <div class="container ">
     <div class="col-lg-6">
       <a class="navbar-brand" href="#">
