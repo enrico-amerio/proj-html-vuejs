@@ -5,8 +5,11 @@ import Events from './Events.vue';
 import Testimonials from './Testimonials.vue';
 import Video from './Video.vue';
 import LatestNews from './LatestNews.vue';
+import ContactUs from './ContactUs.vue'
 import CreativeLeader from './CreativeLeader.vue';
 import Staff from './Staff.vue';
+import ContactUsVue from './ContactUs.vue';
+
   export default {
     data(){
       return{
@@ -20,7 +23,8 @@ import Staff from './Staff.vue';
       CreativeLeader,
       LatestNews,
       Testimonials,
-      Video
+      Video,
+      ContactUs
     }
   }
 </script>
@@ -34,6 +38,7 @@ import Staff from './Staff.vue';
   <LatestNews/>
   <Testimonials/>
   <Video/>
+  <ContactUs/>
 </template>
 
 
