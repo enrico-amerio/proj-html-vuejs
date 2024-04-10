@@ -2,8 +2,9 @@
 import {store} from '../data/store';
 import Specialities from './Specialities.vue';
 import Events from './Events.vue';
+import LatestNews from './LatestNews.vue';
+import CreativeLeader from './CreativeLeader.vue';
 import Staff from './Staff.vue';
-
   export default {
     data(){
       return{
@@ -13,7 +14,9 @@ import Staff from './Staff.vue';
     components:{
       Specialities,
       Staff,
-      Events
+      Events,
+      CreativeLeader,
+      LatestNews
     }
   }
 </script>
@@ -23,6 +26,8 @@ import Staff from './Staff.vue';
   <Specialities/>
   <Staff/>
   <Events/>
+  <CreativeLeader/>
+  <LatestNews/>
 </template>
 
 

@@ -53,6 +53,7 @@ export default {
             <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
           </div>
         </div>
+        <img class="pattern" src="../assets/svg/svg-4.svg" alt="pattern">
       </div>
     </div>
   </div>
@@ -67,6 +68,13 @@ export default {
   height: fit-content;
   position: relative;
   padding: 100px 0;
+  .pattern{
+    width: 300px;
+    position: absolute;
+    top:30px;
+    right: 50px;
+    z-index: -1;
+  }
   .img-wrapper{
     width: 450px;
     img{

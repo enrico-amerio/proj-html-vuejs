@@ -9,6 +9,7 @@ import slideJumbo from '../assets/db.json'
         slideJumbo
       }
     },
+    
     methods:{
       getPathImage(img){
         return new URL(`../assets/img/${img}`, import.meta.url).href
