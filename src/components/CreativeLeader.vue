@@ -5,8 +5,8 @@ export default {
 </script>
 
 <template>
-  <div class="wrapper">
-    <div class="container  mt-5 ">
+  <div class="wrapper p-5">
+    <div class="container  mt-5  ">
       <div class="col-xl-6 mb-5">
         <h3> Creative Leader</h3>
         <div class="line"></div>
@@ -39,7 +39,7 @@ export default {
           <h6>Motivation</h6>
           <h6>83%</h6>
         </div>
-        <div class="progress mb-4" role="progressbar" aria-label="Example 1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 2px">
+        <div class="progress mb-4 " role="progressbar" aria-label="Example 1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 2px">
           <div class="progress-bar" style="width: 83%"></div>
         </div>
       </div>
