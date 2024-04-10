@@ -159,5 +159,25 @@
       "imgTop":"h1-blog-img-04.jpg",
       "imgBottom":"h1-blog-img-01.jpg"
     }
+  ],
+  "testimonials":[
+    {
+      "id":"1",
+      "img":"h3-img-04.png",
+      "name":"Cynthia Clark",
+      "description":" Lorem ipsum dolor sit amet. Lorem ipsum. Lorem ipsum dolor sit amet. Lorem ipsum."
+    },
+    {
+      "id":"2",
+      "img":"h3-img-07.png",
+      "name":"Lucy Jones",
+      "description":" Lorem ipsum dolor sit amet.dolor sit ametem Lorem ipsum. ipsum dolor sit amet. Lorem ipsum."
+    },
+    {
+      "id":"3",
+      "img":"h3-img-08.png",
+      "name":"Sarah Bass",
+      "description":" Lorem ipsum Lorem ipsum. . Lorem ipsum dolor  Lorem ipsum.sit amet. "
+    }
   ]
 }

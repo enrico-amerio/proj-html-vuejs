@@ -2,6 +2,8 @@
 import {store} from '../data/store';
 import Specialities from './Specialities.vue';
 import Events from './Events.vue';
+import Testimonials from './Testimonials.vue';
+import Video from './Video.vue';
 import LatestNews from './LatestNews.vue';
 import CreativeLeader from './CreativeLeader.vue';
 import Staff from './Staff.vue';
@@ -16,7 +18,9 @@ import Staff from './Staff.vue';
       Staff,
       Events,
       CreativeLeader,
-      LatestNews
+      LatestNews,
+      Testimonials,
+      Video
     }
   }
 </script>
@@ -28,6 +32,8 @@ import Staff from './Staff.vue';
   <Events/>
   <CreativeLeader/>
   <LatestNews/>
+  <Testimonials/>
+  <Video/>
 </template>
 
 
