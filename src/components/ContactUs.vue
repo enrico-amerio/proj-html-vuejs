@@ -13,9 +13,9 @@ import slideJumbo from '../assets/db.json'
 </script>
 
 <template>
-  <div class="container d-flex pt-5 pb-5  ">
+  <div class="container d-flex flex-column pt-5 pb-5 main ">
     <div class="col-xl-6 left">
-      <img src="../assets/img/h1-contact-rev-01.png" alt="worldimg">
+      <img class="world" src="../assets/img/h1-contact-rev-01.png" alt="worldimg">
       <img class="pin" src="../assets/img/h1-contact-rev-02.png" alt="pin" id="pin1">
       <img class="pin" src="../assets/img/h1-contact-rev-02.png" alt="pin" id="pin2">
       <img class="pin" src="../assets/img/h1-contact-rev-02.png" alt="pin" id="pin3">
@@ -49,11 +49,11 @@ import slideJumbo from '../assets/db.json'
   </div>
   <div class="container pt-4 pb-4">
     <div class="col-12 d-flex justify-content-between">
-      <a><img src="../assets/img/h4-clients-img-03.png" alt="" class="logo"></a>
-      <a><img src="../assets/img/h4-clients-img-05.png" alt="" class="logo"></a>
-      <a><img src="../assets/img/h4-clients-img-07.png" alt="" class="logo"></a>
-      <a><img src="../assets/img/h4-clients-img-09.png" alt="" class="logo"></a>
-      <a><img src="../assets/img/h4-clients-img-01.png" alt="" class="logo"></a>
+      <a><img src="../assets/img/h4-clients-img-03.png" alt="logo" class="logo"></a>
+      <a><img src="../assets/img/h4-clients-img-05.png" alt="logo" class="logo"></a>
+      <a><img src="../assets/img/h4-clients-img-07.png" alt="logo" class="logo"></a>
+      <a><img src="../assets/img/h4-clients-img-09.png" alt="logo" class="logo"></a>
+      <a><img src="../assets/img/h4-clients-img-01.png" alt="logo" class="logo"></a>
     </div>
   </div>
 </template>
@@ -72,19 +72,22 @@ import slideJumbo from '../assets/db.json'
   }
 .left{
   position: relative;
+  .world{
+    width: 100%;
+  }
   .pin{
     position:absolute
   }
   #pin1{
-    right: 75%;
-    top:34%;
+    right: 73%;
+    top:32%;
   }
   #pin2{
-    right: 50%;
-    top:20%;
+    right: 45%;
+    top:21%;
   }
   #pin3{
-    right: 20%;
+    right: 13%;
     bottom:18%;
   }
 }
@@ -101,9 +104,15 @@ import slideJumbo from '../assets/db.json'
 }
 }
 .logo{
- width: 100px;
+ width: 90%;
 }
 .logo:hover{
   filter: invert(45%) sepia(100%) saturate(4377%) hue-rotate(353deg) brightness(100%) contrast(102%);
+}
+@media screen and (min-width: 1200px) {
+  .main {
+    display: flex;
+    flex-direction: row !important;
+  }
 }
 </style>

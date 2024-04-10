@@ -8,7 +8,6 @@ import LatestNews from './LatestNews.vue';
 import ContactUs from './ContactUs.vue'
 import CreativeLeader from './CreativeLeader.vue';
 import Staff from './Staff.vue';
-import ContactUsVue from './ContactUs.vue';
 
   export default {
     data(){
