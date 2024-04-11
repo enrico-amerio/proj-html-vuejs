@@ -1,12 +1,12 @@
 <script>
 import {store} from '../data/store'
-import slideJumbo from '../assets/db.json'
+import data from '../assets/db.json'
 
   export default {  
     data(){
       return{
         store,
-        slideJumbo
+        data
       }
     },
   }
@@ -19,7 +19,7 @@ import slideJumbo from '../assets/db.json'
         <div class="col">
           <h6>About</h6>
           <div class="line"></div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cupiditate reiciendis sequi consectetur modi ut ipsam placeat sed quam odit voluptas praesentium velit, magni debitis, error dicta, inventore cum ratione et minima! Natus sint nemo nobis doloribus optio.</p>
+          <p>{{ this.data.footer.bio }}</p>
           <div class="icon-wrap">
             <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
@@ -29,27 +29,23 @@ import slideJumbo from '../assets/db.json'
         <div class="col">
           <h6>Twitter</h6>
           <div class="line"></div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eum ad aut reiciendis, nulla asperiores explicabo ullam necessitatibus optio! Veritatis!</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, vitae ad sed nihil asperiores obcaecati debitis ratione sequi sunt perspiciatis!</p>
+          <p v-for="post in this.data.footer.twitter" :key="post.id">{{ post.post }}</p>
         </div>
         <div class="col">
           <h6>Important links</h6>
           <div class="line"></div>
           <ul>
-            <li><a href="">About me</a></li>
-            <li><a href="">About us</a></li>
-            <li><a href="">Language packs</a></li>
-            <li><a href="">Become a coach</a></li>
-            <li><a href="">Monthly event</a></li>
+            <li v-for="link in this.data.footer.importantLinks" :key="link.id"><a href="">{{link.name}}</a></li>
+            
           </ul>
         </div>
         <div class="col-12 col-xl-3">
           <h6>Contact me</h6>
           <div class="line"></div>
           <ul>
-            <li><i class="fa-solid fa-location-dot"></i> 457 BigBlue Street, NY 10013</li>
-            <li><i class="fa-solid fa-phone"></i> (315) 5512-2579</li>
-            <li><i class="fa-solid fa-envelope"></i> everlead@mikado.com</li>
+            <li><i class="fa-solid fa-location-dot"></i> {{ this.data.footer.contacts.address }}</li>
+            <li><i class="fa-solid fa-phone"></i> {{ this.data.footer.contacts.phone }}</li>
+            <li><i class="fa-solid fa-envelope"></i> {{ this.data.footer.contacts.mail }}</li>
           </ul>
           <input type="text" placeholder="Your Name" class="form-control shadow-none">
         </div>

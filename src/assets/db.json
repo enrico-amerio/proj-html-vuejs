@@ -179,5 +179,51 @@
       "name":"Sarah Bass",
       "description":" Lorem ipsum Lorem ipsum. . Lorem ipsum dolor  Lorem ipsum.sit amet. "
     }
-  ]
+  ],
+  "footer":
+    {
+      "bio":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cupiditate reiciendis sequi consectetur modi ut ipsam placeat sed quam odit voluptas praesentium velit, magni debitis, error dicta, inventore cum ratione et minima! Natus sint nemo nobis doloribus optio.",
+      "twitter":[
+        {
+          "id":"1",
+          "post":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eum ad aut reiciendis, nulla asperiores explicabo ullam necessitatibus optio! Veritatis!"
+        },
+        {
+          "id":"2",
+          "post":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eum ad aut reiciendis, nulla asperiores explicabo ullam necessitatibus optio! Veritatis!"
+        }
+      ],
+      "importantLinks":[
+        {
+          "id":"1",
+          "name":"About me"
+        },
+        {
+          "id":"2",
+          "name":"About us"
+        },
+        {
+          "id":"3",
+          "name":"Language packs"
+        },
+        {
+          "id":"4",
+          "name":"Become a coach"
+        },
+        {
+          "id":"5",
+          "name":"Monthly events"
+        }
+      ],
+      "contacts":
+        {
+          "address":"457 BigBlue Street, NY 10013",
+          "phone":"(315) 5512-2579",
+          "mail":"everlead@mikado.com"
+        }
+        
+      
+    
+    }
+  
 }
