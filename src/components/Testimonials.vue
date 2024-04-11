@@ -32,10 +32,11 @@ export default {
 </script>
 
 <template>
-  <div class="wrapper ">
+  <div class="wrapper">
+    <div class="testimonials-title"><p class="testimonials-text">Testimonials.</p></div>
     <div class="container" v-for="testimonial in data.testimonials" :key="testimonial.id">
-      <div class="testimonial text-center " v-if="testimonial.id == this.store.testimonialCounter">
-        <img class="mb-3" :src="getPathImage(testimonial.img)" alt="testimonial">
+      <div class="testimonial text-center" v-if="testimonial.id == this.store.testimonialCounter">
+        <img class="mb-3 testimonial-pic" :src="getPathImage(testimonial.img)" alt="testimonial">
         <h6>{{ testimonial.name }}</h6>
         <p>{{ testimonial.description }}</p>
       </div>
@@ -48,20 +49,49 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.wrapper{
+.wrapper {
   padding: 100px 0;
   background-color: #1e1c1c;
-  height: fit-content;
-  width: 100%;
-  color:white;
-  position:relative;
+  color: white;
+  position: relative;
 }
-.nav-arrows{
+
+.testimonials-title {
   position: absolute;
-  top:50%;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+
+  .testimonials-text {
+    z-index: -1; 
+    color: black;
+    font-weight: 600;
+  }
+
+  @media only screen and (min-width: 768px) {
+    font-size: 7rem;
+  }
+  @media only screen and (min-width: 1200px) {
+    font-size: 11rem;
+  }
+}
+
+.testimonial-pic {
+  position: relative;
+  z-index: 1;
+  
+}
+
+.nav-arrows {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
   margin: 0 auto;
   z-index: 2;
-  a{
+  
+  a {
     cursor: pointer;
   }
 }

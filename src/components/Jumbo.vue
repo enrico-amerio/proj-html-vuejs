@@ -15,6 +15,7 @@ import slideJumbo from '../assets/db.json'
         return new URL(`../assets/img/${img}`, import.meta.url).href
       },
       goNext(){
+      
         if(this.store.jumboCounter < this.slideJumbo.slideJumbo.length){
           this.store.jumboCounter++
         }else{
@@ -28,6 +29,9 @@ import slideJumbo from '../assets/db.json'
           this.store.jumboCounter = this.slideJumbo.slideJumbo.length
         }
       }
+    }, mounted(){
+
+      setInterval(this.goNext,5000)
     }
     
     
@@ -80,7 +84,7 @@ import slideJumbo from '../assets/db.json'
   .slide{
     position: relative;
     width: 100%;
-    z-index: -1;
+    // z-index: -1;
     
     img{
       width: 100%;

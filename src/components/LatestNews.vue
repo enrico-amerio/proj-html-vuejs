@@ -46,12 +46,12 @@ export default {
           <div class="img2">
             <img  :src="getPathImage(news.imgBottom)" alt="newsImg2">
           </div>
-          <div class="tag">{{ news.tag }}</div>
+          <div class="tag"><i class="fa-solid fa-tag"></i> {{ news.tag }}</div>
         </div>
         <div class="info-wrap ">
           <p>
-            <span>{{ news.date }}</span>
-            <span>{{ news.author }}</span>
+            <span class="me-2"><i class="fa-regular fa-clock"></i> {{ news.date }}</span>
+            <span><i class="fa-regular fa-user"></i> {{ news.author }}</span>
           </p>
           <h5>{{ news.title }}</h5>
           <p>{{ news.description }}</p>
@@ -108,7 +108,8 @@ h3::after{
     right: 10px;
     bottom: 20px;
     font-weight: 200;
-  }
+   
+}
 }
 .info-wrap{
  max-width: 380px;
@@ -116,6 +117,11 @@ h3::after{
     text-decoration: none;
     color:black;
     cursor: pointer;
+  }
+  
+  i{
+    color: $main-orange;
+    margin-right: 2px;
   }
 }
 .nav-arrows{

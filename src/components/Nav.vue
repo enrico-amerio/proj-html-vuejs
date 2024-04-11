@@ -90,11 +90,14 @@ nav{
       font-weight: 700;
       &:hover{
         color: $main-orange;
+        @media only screen and (min-width: 1200px) {
         &::before{
-          content:'\f178';
-          font-family: 'Font Awesome 5 Free';
-          margin: 8px;
-        }
+        content:'\f178';
+        font-family: 'Font Awesome 5 Free';
+        margin: 8px;
+      }
+      
+    }
       }
     }
   }

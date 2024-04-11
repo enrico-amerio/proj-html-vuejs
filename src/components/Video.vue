@@ -30,6 +30,8 @@ export default {
   .icon{
     color:white;
     font-size: 50px;
+    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
   }
 }
 </style>

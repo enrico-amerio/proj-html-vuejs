@@ -43,13 +43,13 @@ import slideJumbo from '../assets/db.json'
             <li><a href="">Monthly event</a></li>
           </ul>
         </div>
-        <div class="col">
+        <div class="col-12 col-xl-3">
           <h6>Contact me</h6>
           <div class="line"></div>
           <ul>
-            <li>457 BigBlue Street, NY 10013</li>
-            <li>(315) 5512-2579</li>
-            <li>everlead@mikado.com</li>
+            <li><i class="fa-solid fa-location-dot"></i> 457 BigBlue Street, NY 10013</li>
+            <li><i class="fa-solid fa-phone"></i> (315) 5512-2579</li>
+            <li><i class="fa-solid fa-envelope"></i> everlead@mikado.com</li>
           </ul>
           <input type="text" placeholder="Your Name" class="form-control shadow-none">
         </div>
@@ -76,7 +76,11 @@ import slideJumbo from '../assets/db.json'
   ul, li { margin: 0;
     padding: 0;
     list-style-type: none;
-    font-weight: 300;  
+    font-weight: 300;
+    i{
+      color: $main-orange;
+      margin-right: 5px;
+    }  
   }
   a{
     text-decoration: none;
@@ -100,8 +104,10 @@ import slideJumbo from '../assets/db.json'
 .copyright{
   background-color:$main-orange ;
   text-align: center;
+  height: fit-content;
   p{
     color: white;
+    margin:0;
   }
 }
 </style>

@@ -22,7 +22,6 @@ export default {
 
 <template>
   <div class="wrapper">
-    <img src="../assets/img/h1-img-09.jpg" alt="">
     <div class="container">
       <div class="card-wrapper">
     <h5 class="title">Upcoming Events</h5>
@@ -49,28 +48,31 @@ export default {
 @use '../assets/scss/main';
 @use '../assets/scss/partials/variables' as * ;
 .wrapper{
-  position: relative;
+  //  position: relative;
     width: 100%;
-    z-index: -1;
     display: flex;
-    flex-direction: column;
+    align-items:center ;
     
-  img{
-    img{
-      width: 100%;
-      height: 90vh;
-      max-height: 1000px;
-          object-fit: cover;
-    }
-  }
+    background-image:url('../assets/img/h1-img-09.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    
+    
   .card-wrapper{
     background-color: #fafafa ;
-    position:absolute;
-    top: 20%;
-    left: 20%;
+    // position:absolute;
+    // top: 20%;
+    // left: 20%;
     border: 1px solid #e1e1e1;
     width: 300px;
     margin-bottom: 100px;
+    height: fit-content;
+    margin: 0 auto;
+    @media only screen and (min-width: 1200px) {
+      margin: 0 15%;
+      
+    }
     
     
     .title, .event{

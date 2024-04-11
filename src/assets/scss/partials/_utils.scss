@@ -25,6 +25,12 @@
       background-color:$main-orange;
       color: white;
     }
+    &:hover{
+      .my-btn-icon{
+        border-left: 0;
+      }
+      
+    }
 }
 .social-icon{
   background-color: $main-orange;

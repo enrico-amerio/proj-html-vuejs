@@ -71,14 +71,17 @@ export default {
   .pattern{
     width: 300px;
     position: absolute;
-    top:30px;
-    right: 50px;
+    top:8%;
+    right: 10%;
     z-index: -1;
   }
   .img-wrapper{
     width: 450px;
+    height: 300px;
+    overflow: hidden;
     img{
       width: 100%;
+      object-fit: cover;
     }
   }
   .description-wrapper{
