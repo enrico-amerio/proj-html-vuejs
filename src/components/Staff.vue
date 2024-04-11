@@ -103,7 +103,7 @@ export default {
   }
   .nav-arrows{
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     left: 0;
       .my_btn{
         padding: 15px;

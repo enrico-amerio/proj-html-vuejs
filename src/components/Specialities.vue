@@ -29,7 +29,7 @@ export default {
     <h2 class="title">Our specialities</h2>
     <p>Lorem ipsum dolor sit amet.</p>
     <div class="line"></div>
-    <div class="d-flex flex-wrap justify-content-center">
+    <div class="d-flex flex-wrap justify-content-center ps-5 pe-5">
       <SpecialCards v-for="card in data.specialities" :key="card.id"
       :img="getPathImage(card.img)"
       :title="card.title"
